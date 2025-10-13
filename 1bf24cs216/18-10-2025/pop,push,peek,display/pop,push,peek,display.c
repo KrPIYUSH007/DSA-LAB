@@ -64,8 +64,10 @@ void main(){
     display();
     break;
     case 5:
+     break;
     default:
     printf("Enter the valid option");
    }
    }
 }
+
