@@ -63,7 +63,7 @@ struct Node* next;
  printf(" front: %d\n",front->data);
  }
  }
- void main(){
+ int main(){
     struct Node* stacktop=NULL;
     struct Node* qfront=NULL, *qrear=NULL;
 int choice,value;
@@ -81,10 +81,11 @@ while(1){
             break;
     case 4:
          printf("ENter value\n");
-         scanf("%d", value);
+         scanf("%d", &value);
          enqueue(&qfront,&qrear,value);
             break;
     case 5:dequeue(&qfront,&qrear);
+            break;
     case 6:
        frontvalue(qfront);
     break;
@@ -93,4 +94,5 @@ while(1){
     default:printf("Enter valid choice\n");
 }
 }
+return 0;
 }
